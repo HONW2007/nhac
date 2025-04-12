@@ -39,17 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: 'music/aab.mp3', title: 'Bài Hát 25' },
         { src: 'music/ab.mp3', title: 'Bài Hát 26' },
         { src: 'music/ac.mp3', title: 'Bài Hát 27' },
-        { src: 'music/remix1.mp3', title: 'Bài Hát 29' },
-        { src: 'music/remix2.mp3', title: 'Bài Hát 30' },
-        { src: 'music/remix3.mp3', title: 'Bài Hát 31' },
-        { src: 'music/remix4.mp3', title: 'Bài Hát 32' },
-        { src: 'music/remix5.mp3', title: 'Bài Hát 33' },
-        { src: 'music/remix6.mp3', title: 'Bài Hát 34' },
-        { src: 'music/remix7.mp3', title: 'Bài Hát 35' },
-        { src: 'music/remix8.mp3', title: 'Bài Hát 36' },
-        { src: 'music/remix9.mp3', title: 'Bài Hát 37' },
-        { src: 'music/remix10.mp3', title: 'Bài Hát 38' },
-        { src: 'music/abb.mp3', title: 'Bài Hát 39' }
+        { src: 'music/remix1.mp3', title: 'Bài Hát 28' },
+        { src: 'music/remix2.mp3', title: 'Bài Hát 29' },
+        { src: 'music/remix3.mp3', title: 'Bài Hát 30' },
+        { src: 'music/remix4.mp3', title: 'Bài Hát 31' },
+        { src: 'music/remix5.mp3', title: 'Bài Hát 32' },
+        { src: 'music/remix6.mp3', title: 'Bài Hát 33' },
+        { src: 'music/remix7.mp3', title: 'Bài Hát 34' },
+        { src: 'music/remix8.mp3', title: 'Bài Hát 35' },
+        { src: 'music/remix9.mp3', title: 'Bài Hát 36' },
+        { src: 'music/remix10.mp3', title: 'Bài Hát 37' },
+        { src: 'music/abb.mp3', title: 'Bài Hát 38' }
     ];
 
     let currentSongIndex = 0;
