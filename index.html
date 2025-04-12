@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Nhạc Sang Trọng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="album">
+        <h2>Album Nhạc Yêu Thích</h2>
+        <div class="disk" id="disk"></div>
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="progressBar" min="0" value="0" step="1">
+            <span id="duration">0:00</span>
+        </div>
+        <audio id="audio"></audio>
+        <div class="controls">
+            <button id="repeatBtn" title="Lặp lại">🔁</button>
+            <button id="prevBtn" title="Bài trước">⏮️</button>
+            <button id="playBtn" title="Phát/Tạm dừng">▶️</button>
+            <button id="nextBtn" title="Bài sau">⏭️</button>
+            <button id="randomBtn" title="Phát ngẫu nhiên">🔀</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

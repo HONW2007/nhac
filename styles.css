@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6e7f, #bfe9ff, #a1c4fd, #c2e9fb);
+    background-size: 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.album {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.disk {
+    width: 250px;
+    height: 250px;
+    background: url('images/anhdep.jpeg') center/cover;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(29, 185, 84, 0.5), 0 0 60px rgba(29, 185, 84, 0.3);
+    margin: 0 auto 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    animation: spin 4s linear infinite, pulse 0.5s ease-out;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+h2 {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    width: 250px;
+}
+
+.progress-container span {
+    color: #fff;
+    font-size: 14px;
+    width: 40px;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#progressBar {
+    flex: 1;
+    -webkit-appearance: none;
+    height: 8px;
+    background: linear-gradient(to right, #1db954, #a1c4fd);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.8);
+    transition: transform 0.2s ease;
+}
+
+#progressBar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+#progressBar::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.8);
+    transition: transform 0.2s ease;
+}
+
+#progressBar::-moz-range-thumb:hover {
+    transform: scale(1.2);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #1db954, #a1c4fd);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button.active {
+    background: linear-gradient(45deg, #1db954, #00ff88);
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.8);
+}
